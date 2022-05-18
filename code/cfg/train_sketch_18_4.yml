@@ -1,0 +1,42 @@
+CONFIG_NAME: 'LAGAN_mutual100_self10'
+
+DATASET_NAME: 'sketches'
+DATA_DIR: '/home/rookie/cwt/ControlGAN/data/sketches'
+GPU_ID: 0
+WORKERS: 2
+
+
+TREE:
+    BRANCH_NUM: 3
+
+TRAIN:
+    FLAG: True
+    # NET_G: '/home/rookie/cwt/LAGAN2/output/sketches_ControlGAN_2022_low_da_low_da/Model/netG_epoch_200.pth' 
+    NET_G: ''
+    B_NET_D: True
+    BATCH_SIZE: 8 # 8
+    MAX_EPOCH: 601
+    SNAPSHOT_INTERVAL: 100 
+    DISCRIMINATOR_LR: 0.0002
+    GENERATOR_LR: 0.0002
+    #
+    NET_E: '/home/rookie/cwt/LAGAN2/DAMSMencoders/sketch_18_4_low_da_low_da/text_encoder.pth'
+    SMOOTH:
+        GAMMA1: 4.0 
+        GAMMA2: 5.0
+        GAMMA3: 10.0  
+        LAMBDA: 5.0
+        LAMBDA2: 1.0 # vgg loss
+        LAMBDA3: 100.0 # mutual similarity # 100
+        LAMBDA4: 10.0 # self similarity # 100
+
+GAN:
+    DF_DIM: 64
+    GF_DIM: 32
+    Z_DIM: 100
+    R_NUM: 2
+
+TEXT:
+    EMBEDDING_DIM: 256
+    CAPTIONS_PER_IMAGE: 4
+    WORDS_NUM: 18

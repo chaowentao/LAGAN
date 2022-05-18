@@ -1,0 +1,30 @@
+CONFIG_NAME: 'LAGAN'
+
+DATASET_NAME: 'sketches'
+DATA_DIR: '../data/sketches'
+GPU_ID: 0
+WORKERS: 1
+
+B_VALIDATION: True # True
+TREE:
+    BRANCH_NUM: 3
+
+
+TRAIN:
+    FLAG: False
+    NET_G: '/home/rookie/cwt/LAGAN2/output/sketches_LAGAN_mutual10_self100_600/Model/netG_epoch_600.pth' 
+    B_NET_D: False
+    BATCH_SIZE: 2
+    NET_E: '../DAMSMencoders/sketch_18_4_low_da_low_da/text_encoder.pth'
+
+
+GAN:
+    DF_DIM: 64
+    GF_DIM: 32
+    Z_DIM: 100
+    R_NUM: 2
+
+TEXT:
+    EMBEDDING_DIM: 256
+    CAPTIONS_PER_IMAGE: 4
+    WORDS_NUM: 18
