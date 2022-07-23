@@ -66,7 +66,6 @@ python main.py --cfg cfg/eval_sketch_18_4.yml --gpu 2
   title={LAGAN: Landmark Aided Text to Face Sketch Generation},
   author={Chao, Wentao and Chang, Liang and Xi, Fangfang and Duan, Fuqing},
   booktitle={Chinese Conference on Pattern Recognition and Computer Vision (PRCV)},
-<!--   pages={3--15}, -->
   year={2022},
   organization={Springer}
 }
