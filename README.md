@@ -1,5 +1,5 @@
 # LAGAN 
-Pytorch implementation for (PRCV 2022) LAGAN: Landmark Aided Text to Face Sketch Generation. 
+Pytorch implementation for (PRCV 2022) [LAGAN: Landmark Aided Text to Face Sketch Generation](https://github.com/chaowentao/LAGAN/blob/main/PRCV2022_Text2Sketch.pdf). 
 
 ### Overview
 <img src="network.png" width="900px" height="404px"/>
