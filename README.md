@@ -62,10 +62,11 @@ python main.py --cfg cfg/eval_sketch_18_4.yml --gpu 2
 ### Citiation
 **If you find this work helpful, please consider citing:**
 ```
-@inproceedings{LAGAN,
+@inproceedings{chao2022lagan,
   title={LAGAN: Landmark Aided Text to Face Sketch Generation},
   author={Chao, Wentao and Chang, Liang and Xi, Fangfang and Duan, Fuqing},
   booktitle={Chinese Conference on Pattern Recognition and Computer Vision (PRCV)},
+  pages={137--151},
   year={2022},
   organization={Springer}
 }
