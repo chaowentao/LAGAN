@@ -9,7 +9,7 @@ Pytorch implementation for (PRCV 2022) [LAGAN: Landmark Aided Text to Face Sketc
 
 ### Data
 
-**TextCUFSF** dataset has been included in `data/sketches/`
+**TextCUFSF** dataset has been included in `data/sketches/`. If not availvale, please give me your emali in `Issues`.
 
 
 ### Training
