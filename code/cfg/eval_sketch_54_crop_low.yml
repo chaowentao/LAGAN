@@ -1,0 +1,30 @@
+CONFIG_NAME: 'ControlGAN'
+
+DATASET_NAME: 'sketches'
+DATA_DIR: '../data/sketches'
+GPU_ID: 0
+WORKERS: 1
+
+B_VALIDATION: False # True
+TREE:
+    BRANCH_NUM: 3
+
+
+TRAIN:
+    FLAG: False
+    NET_G: '../models/sketch_54_crop_low/netG_epoch_600.pth' 
+    B_NET_D: False
+    BATCH_SIZE: 16 
+    NET_E: '../DAMSMencoders/sketch_54_crop_low/text_encoder.pth'
+
+
+GAN:
+    DF_DIM: 64
+    GF_DIM: 32
+    Z_DIM: 100
+    R_NUM: 2
+
+TEXT:
+    EMBEDDING_DIM: 256
+    CAPTIONS_PER_IMAGE: 1
+    WORDS_NUM: 54
